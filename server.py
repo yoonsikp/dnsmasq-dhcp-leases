@@ -22,7 +22,7 @@ class HTTPRequestHandler(BaseHTTPRequestHandler):
 
         # Send message back to client
         lease_file = open('/var/lib/misc/dnsmasq.leases', 'r')
-        space = '&emsp;'
+        space = '&nbsp;'
         message = '<!DOCTYPE html><html><body><h1>DHCP Leases</h1>\n<code>' + \
                   'Expiry' + space * 4 + \
                   'MAC Address' + space * 8 + \
